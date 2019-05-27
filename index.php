@@ -38,12 +38,22 @@ echo json_encode($usuarios);*/
 
 //Novo Usuario
 
-$aluno = new Usuario("Frederico", "@gaso");
+//$aluno = new Usuario("Frederico", "@gaso");
 
 
-$aluno->insert();
+//$aluno->insert();
 
-echo $aluno;
+//echo $aluno;
+
+//Delete Usuario
+
+$usuario = new Usuario();
+
+$usuario->loadById(7);
+
+$usuario->delete();
+
+echo $usuario;
 
 
 
